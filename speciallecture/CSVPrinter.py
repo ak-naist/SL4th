@@ -10,6 +10,6 @@ class CSVPrinter:
             lines = [row for row in reader]
         return lines
     
-        def asdf(int N):
+        def asdf(N):
         N++;
         return N
