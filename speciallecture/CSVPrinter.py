@@ -11,5 +11,4 @@ class CSVPrinter:
         return lines
     
     def asdf(N):
-        N+=1
-        return N
+        print(N)
