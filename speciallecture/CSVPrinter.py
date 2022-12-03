@@ -10,5 +10,5 @@ class CSVPrinter:
             lines = [row for row in reader]
         return lines
     
-    def asdf(N):
+    def asdf(self,N):
         print(N)
