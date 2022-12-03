@@ -4,13 +4,13 @@ from speciallecture.CSVPrinter import CSVPrinter
 
 class TestCSVPrinter(unittest.TestCase):
     def test_read1(self):
-        printer = CSVPrinter("/home/runner/work/SL2nd/SL2nd/test/sample.csv")
+        printer = CSVPrinter("/home/runner/work/SL4th/SL4th/test/sample.csv")
         print(printer)
         l = printer.read()
         self.assertEqual(3, len(l))
 
     def test_read2(self):
-        printer = CSVPrinter("/home/runner/work/SL2nd/SL2nd/test/sample.csv")
+        printer = CSVPrinter("/home/runner/work/SL4th/SL4th/test/sample.csv")
         l = printer.read()
         self.assertEqual(['value1A', 'value1B', 'value1C'], l[0])
         self.assertEqual(['value2A', 'value2B', 'value2C'], l[1])
@@ -18,7 +18,7 @@ class TestCSVPrinter(unittest.TestCase):
 
     def test_read3(self):
         try:
-            printer = CSVPrinter("/home/runner/work/SL2nd/SL2nd/test/noexist.csv")
+            printer = CSVPrinter("/home/runner/work/SL4th/SL4th/test/noexist.csv")
             printer.read()
             unittest.TestCase.fail("Normal exe")
         except FileNotFoundError as e:
